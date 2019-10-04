@@ -9,7 +9,7 @@
     
     <DockPanel  LastChildFill="True">
 
-        <CheckBox x:Name="SilencioCheckBox" DockPanel.Dock="Bottom" Margin="5" HorizontalAlignment="Left" Checked="SilencioCheckBox_Checked">Silencio</CheckBox>
+        <CheckBox x:Name="SilencioCheckBox" DockPanel.Dock="Bottom" Margin="5" HorizontalAlignment="Left" Checked="SilencioCheckBox_Checked" Unchecked="SilencioCheckBox_Unchecked">Silencio</CheckBox>
 
         <DockPanel DockPanel.Dock="Right" LastChildFill="False">
 

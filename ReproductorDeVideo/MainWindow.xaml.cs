@@ -28,11 +28,13 @@ namespace ReproductorDeVideo
         private void Trailer1Radio_Checked(object sender, RoutedEventArgs e)
         {
             VideoPlayer.Source = new Uri(@"C:\Users\alumno\Desktop\trailer1.mp4");
+            VideoPlayer.Play();
         }
 
         private void Trailer2Radio_Checked(object sender, RoutedEventArgs e)
         {
             VideoPlayer.Source = new Uri(@"C:\Users\alumno\Desktop\trailer2.mp4");
+            VideoPlayer.Play();
         }
 
         private void PLayButton_Click(object sender, RoutedEventArgs e)
@@ -52,6 +54,12 @@ namespace ReproductorDeVideo
 
         private void SilencioCheckBox_Checked(object sender, RoutedEventArgs e)
         {
+            VideoPlayer.IsMuted = true;
+        }
+
+        private void SilencioCheckBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            VideoPlayer.IsMuted = false;
         }
     }
 }
